@@ -27,7 +27,7 @@ T = TypeVar("T", bound=BaseModel)
 def structured_output(
     content: str,
     response_format: T,
-    model: str = "gpt-4.1-mini",
+    model: str = "gpt-5-mini",
 ) -> T:
     api_key = os.environ["OPENAI_API_KEY"]
     client = openai.OpenAI(api_key=api_key)
